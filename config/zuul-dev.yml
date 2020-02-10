@@ -1,16 +1,19 @@
-spring: #应用名
+spring: #搴旂敤鍚�
   application:
     name: zuul
+  cloud:
+    config:
+      override-none: true
     
-server: #端口号
+server: #绔彛鍙�
   port: 3001
   
-eureka: #eureka注册
+eureka: #eureka娉ㄥ唽
   client:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 
-zuul: #zuul规则配置
+zuul: #zuul瑙勫垯閰嶇疆
     retryable: true
     
     
